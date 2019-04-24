@@ -33,7 +33,7 @@ class Song
       if !counted.key?(el)
         counted[el] = 1 
       else 
-        
+        counted[el] += 1 
       end
         
       
