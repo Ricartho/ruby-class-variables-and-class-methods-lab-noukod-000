@@ -29,7 +29,14 @@ class Song
   def self.genre_count
     counted = {}
     @@genres.each do |el|
-      counted[el] = 1 unless counted.key?(el)
+      #counted[el] = 1 unless counted.key?(el)
+      if !counted.key?(el)
+        counted[el] = 1 
+      else 
+        
+      end
+        
+      
     end 
     counted
   end 
